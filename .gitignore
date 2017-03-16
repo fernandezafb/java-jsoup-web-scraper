@@ -17,7 +17,7 @@ target/
 ### Maven files
 mvnw
 mvnw.cmd
-.mvn
+mvn/
 
 ### NetBeans ###
 nbproject/private/
