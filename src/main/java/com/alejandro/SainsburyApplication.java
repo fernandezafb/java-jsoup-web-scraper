@@ -25,7 +25,8 @@ public class SainsburyApplication implements CommandLineRunner {
 
     @Override
     public void run(String... strings) {
-	    logger.info("Execution started, ready to begin crawling.");
+	logger.info("Execution started, ready to begin crawling.");
+	    
         try {
             System.out.println(mapper.writeValueAsString(pageScraper.getProductList()));
         } catch (JsonProcessingException e) {
