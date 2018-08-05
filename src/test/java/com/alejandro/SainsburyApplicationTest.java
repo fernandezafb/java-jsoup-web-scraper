@@ -15,16 +15,16 @@ import static org.mockito.Mockito.verify;
 @RunWith(SpringRunner.class)
 public class SainsburyApplicationTest {
 
-	@InjectMocks
+    @InjectMocks
     private SainsburyApplication sainsburyApplication;
     @Mock
     private PageScraper pageScraper;
     @Mock
     private ObjectMapper mapper;
 
-	@Test
-	public void testRun() throws Exception {
-	    sainsburyApplication.run();
+    @Test
+    public void testRun() throws Exception {
+	sainsburyApplication.run();
 
         verify(mapper).writeValueAsString(any(ProductList.class));
         verify(pageScraper).getProductList();
